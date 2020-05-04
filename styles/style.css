@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Monda&display=swap');
+
+:root {
+  --dark-gray-color: rgb(27, 30, 31);
+  --light-purple-color: rgb(108, 33, 170);
+  --xlight-purple-color: rgb(195, 149, 233);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Monda', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+
+h1 {
+  color: var(--light-purple-color);
+}
+
+.custom-container {
+  width: 100%;
+  /* display: block; */
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%); 
+}
+
+
+img {
+  height: 60vh;
+}
+
+.highlight {
+  color: var(--light-purple-color);
+  font-weight: bold;
+}
+
+#nav-id {
+  background-color: var(--almost-black-color);
+}
+
+#header > nav > a {
+  font-size: medium;
+}
+
+#banner {
+ height: 100vh;
+ background-color: var(--dark-gray-color);
+ background-image: url("../images/uvdrone.jpg");
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-position: 60% 60%;
+ background-size: cover;  /* only line that worked for eliminating whitepsace on ipad pro :) */
+}
+
+#UVHeading {
+  color: white;
+  font-size: 300%;
+  padding-bottom: 100px;
+}
+
+.phone-btn {
+  font-size: 150%;
+  background-color: white;
+  color: var(--dark-gray-color);
+}
+
+.phone-btn:hover {
+  background-color: var(--light-purple-color);
+  color: var(--dark-gray-color);
+}
+
+#footer-phone-div {
+  margin-top: 50px;
+}
+
+#about {
+  min-height: 500px;
+  padding: 10px;
+  padding-top: 15px;
+  background-color: var(--dark-gray-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#about h1 {
+  text-align: center;
+  padding: 10px;
+}
+
+#about p {
+  text-align: center;
+}
+
+/* #gallery {
+  height: 65vh;
+  background-image: url("../images/covidillustration4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 30% 100%;
+} */
+
+#carouselExampleIndicators > div > div:nth-child(1) > div > h3 {
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
+  letter-spacing: -1px; 
+  line-height: 1; 
+  text-align: center;
+}
+
+
+#gallery > div > h1 {
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
+  letter-spacing: -1px; 
+  line-height: 1; 
+  text-align: center;
+}
+
+
+#services-title {
+  text-align: center;
+  background-color: var(--dark-gray-color);
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px white solid;
+}
+
+#services-title h2 {
+  color: white;
+}
+
+
+#services {
+  background-color: var(--dark-gray-color);
+  text-align: center;
+  min-height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#services h2 {
+  padding-top: 15px;
+  color: white;
+  text-align: center;
+}
+
+#boxes {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box h1 {
+  font-size: 200%;
+}
+
+
+.box {
+  float: left;
+  width: 30%;
+	padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+
+/* #contact {
+  color: var(--light-purple-color);
+  min-height: 200px;
+  overflow: hidden;
+} */
+
+/* .form-control {
+  background-color: var(--dark-gray-color);
+  width: 100%;
+  margin: auto;
+} */
+
+#subscribe {
+  background-color: var(--light-purple-color);
+  color: var(--dark-gray-color-color);
+  height: 40vh;
+}
+
+#subscribe h2 {
+  padding-top: 15px;
+  padding-bottom: 10px;
+  color: var(--dark-gray-color);
+}
+
+
+#subscribe input[type="email"] {
+	padding: 15px;
+	height: 25px;
+  width: 75%;
+  margin-bottom: 10px;
+  background-color: var(--dark-gray-color);
+  color: white;
+  border: none;
+}
+
+.sub-button {
+  font-size: 1.3rem;
+  background-color: var(--dark-gray-color);
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 75%;
+}
+
+.sub-button:hover {
+  color: var(--light-purple-color);
+}
+
+
+footer {
+  padding-top: 20px;
+  height: 40vh;
+  min-height: 400px;
+  background-color: var(--dark-gray-color);
+}
+
+#footer-phone {
+  background-color: var(--light-purple-color);
+}
+
+#footer-phone:hover {
+  background-color: white;
+}
+
+#contact-custom-container h2 {
+  color: white;
+  font-size: 300%;
+}
+
+#contact-custom-container a {
+  color: white;
+  font-size: 200%;
+  margin: 10px;
+}
+
+#contact-custom-container a:hover {
+  color: var(--light-purple-color);
+}
+
+
+@media(min-width: 1000px) {
+  #boxes {
+    width: 80%;
+    padding: 20px;
+  }
+
+  #subscribe input[type="email"] {
+    width: 50%;
+  }
+
+  .sub-button {
+    width: 50%;
+  }
+}
+
+@media(max-width: 1200px) {
+	#boxes .box {
+		float: none;
+		width: 100%;
+  }
+  
+}
+
+@media (min-height: 800px) {
+    p {
+      font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1600px) {
+  #banner {
+    background-size: 100%;
+    background-position: 90% 60%;
+    
+  }
+}
+
