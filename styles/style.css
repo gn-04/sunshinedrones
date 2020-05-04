@@ -53,7 +53,7 @@ img {
   font-size: medium;
 }
 
-#banner {
+#home {
  height: 100vh;
  background-color: var(--dark-gray-color);
  background-image: url("../images/uvdrone.jpg");
